@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	private Stage primaryStage;
-	private BorderPane mainLayout;
+	public static BorderPane mainLayout;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
@@ -39,6 +39,15 @@ private void showMainItems() throws IOException {
 	mainLayout.setCenter(mainItems);
 	
 }
+
+public static void showBiddersScene() throws IOException {
+	FXMLLoader loader = new FXMLLoader();
+	loader.setLocation(Main.class.getResource("bidding/Biddingpart.fxml"));
+	BorderPane Biddingpart = loader.load();
+	mainLayout.setCenter(Biddingpart);
+    
+}
+
 
 	public static void main(String[] args) {
 		launch(args);
