@@ -10,11 +10,26 @@
    <center>
       <FlowPane hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="ITEMS CATEGORY">
+               <FlowPane.margin>
+                  <Insets top="130.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="BIDDING">
+               <FlowPane.margin>
+                  <Insets top="130.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="SELLING">
+               <FlowPane.margin>
+                  <Insets top="130.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="SHIPPING">
+               <FlowPane.margin>
+                  <Insets top="130.0" />
+               </FlowPane.margin>
+            </Button>
          </children>
          <padding>
             <Insets left="30.0" top="25.0" />

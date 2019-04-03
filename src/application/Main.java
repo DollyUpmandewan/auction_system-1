@@ -17,6 +17,7 @@ public class Main extends Application {
 		this.primaryStage= primaryStage;
 		this.primaryStage.setTitle("Ation System App");
 		showMainView();
+		showMainItems();
 	   }
    /** 
  * @throws IOException 
@@ -28,11 +29,17 @@ private void showMainView() throws IOException {
 	   mainLayout = loader.load();
 	   Scene scene = new Scene(mainLayout);
 	   primaryStage.setScene(scene);
-	   primaryStage.show();
-	   
-	   
-	   
+	   primaryStage.show();   
    }
+
+private void showMainItems() throws IOException {
+	FXMLLoader loader = new FXMLLoader();
+	loader.setLocation(Main.class.getResource("view/MainItems.fxml"));
+	BorderPane mainItems = loader.load();
+	mainLayout.setCenter(mainItems);
+	
+}
+
 	public static void main(String[] args) {
 		launch(args);
 	}
