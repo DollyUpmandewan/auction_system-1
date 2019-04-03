@@ -15,7 +15,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		this.primaryStage= primaryStage;
-		this.primaryStage.setTitle("Ation System App");
+		this.primaryStage.setTitle("Auction System App");
 		showMainView();
 		showMainItems();
 	   }
