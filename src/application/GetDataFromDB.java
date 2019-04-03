@@ -1,6 +1,7 @@
 package application;
 
 import java.sql.*;
+
 import java.util.*;
 
 public class GetDataFromDB{
@@ -605,7 +606,7 @@ public class GetDataFromDB{
 					item_id[i] = rs.getInt(4);
 					i++;
 				}
-			}catch(SQLException e) {
+			}catch(SQLException e) { 
 				e.printStackTrace();
 			}
 		}
