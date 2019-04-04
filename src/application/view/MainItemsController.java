@@ -6,6 +6,7 @@ import application.Main;
 import javafx.fxml.FXML;
 
 public class MainItemsController {
+	private Main main;
 	@FXML
 	private void gotobiddingpart() throws IOException {
 		
@@ -17,6 +18,12 @@ public class MainItemsController {
 		
 		Main.showSellerScene();
 		 	
+	}
+	public Main getMain() {
+		return main;
+	}
+	public void setMain(Main main) {
+		this.main = main;
 	}
 
 
