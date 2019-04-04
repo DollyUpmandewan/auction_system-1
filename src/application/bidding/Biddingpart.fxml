@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Label graphicTextGap="5.0" text="BIDDING SECTION" textFill="#42d4eb" textOverrun="LEADING_ELLIPSIS" underline="true" wrapText="true" BorderPane.alignment="CENTER">
          <font>
@@ -36,7 +35,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TabPane prefHeight="377.0" prefWidth="408.0" style="-fx-background-color: #8DEFEF;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TabPane prefHeight="377.0" prefWidth="408.0" style="-fx-background-color: #8DEFEF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <tabs>
                       <Tab style="-fx-background-color: #2FE0AB;" text="TODAY" />
                       <Tab style="-fx-background-color: #2FE0AB;" text="HISTORY" />

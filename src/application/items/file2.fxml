@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <SplitPane dividerPositions="0.27591973244147155" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView layoutX="-12.0" layoutY="99.0" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Menu">
+                           <graphic>
+                              <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#db5feb" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Circle>
+                           </graphic></TableColumn>
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane hbarPolicy="ALWAYS" hmin="25.0" prefHeight="348.0" prefWidth="418.0" vbarPolicy="ALWAYS" vmin="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </ScrollPane>
+                  <TabPane layoutX="14.0" prefHeight="348.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <tabs>
+                        <Tab style="-fx-background-color: #38D6F0;" text="Tab 1">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" scaleZ="0.0" style="-fx-background-color: #91F1F1;">
+                                 <children>
+                                    <TextFlow prefHeight="319.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #38D6F0;" text="Tab 2">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #91F1F1;" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </center>
+   <top>
+      <Label text="ITEMS" textFill="#11a47f" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

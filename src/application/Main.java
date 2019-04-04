@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	private Stage primaryStage;
-	public static BorderPane mainLayout;
+	public static  BorderPane mainLayout;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
@@ -23,7 +23,7 @@ public class Main extends Application {
  * @throws IOException 
  * 
  */
-private void showMainView() throws IOException {
+public void showMainView() throws IOException {
 	   FXMLLoader loader = new FXMLLoader();
 	   loader.setLocation(Main.class.getResource("view/MainView.fxml"));
 	   mainLayout = loader.load();
@@ -32,7 +32,7 @@ private void showMainView() throws IOException {
 	   primaryStage.show();   
    }
 
-private void showMainItems() throws IOException {
+public static void showMainItems() throws IOException {
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("view/MainItems.fxml"));
 	BorderPane mainItems = loader.load();
