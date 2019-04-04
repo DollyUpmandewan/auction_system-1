@@ -7,12 +7,17 @@ import javafx.fxml.FXML;
 
 public class MainItemsController {
 	@FXML
-	private void gotobuddingpart() throws IOException {
+	private void gotobiddingpart() throws IOException {
 		
 		Main.showBiddersScene();
-		 
-		
+		 	
 	}
-	
+	@FXML
+	private void gotosellingpart() throws IOException {
+		
+		Main.showSellerScene();
+		 	
+	}
+
 
 }

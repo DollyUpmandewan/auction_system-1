@@ -14,12 +14,12 @@
                   <Insets top="130.0" />
                </FlowPane.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#gotobuddingpart" onDragDetected="#gotobuddingpart" prefHeight="120.0" prefWidth="120.0" text="BIDDING">
+            <Button mnemonicParsing="false" onAction="#gotobiddingpart" onDragDetected="#gotobiddingpart" prefHeight="120.0" prefWidth="120.0" text="BIDDING">
                <FlowPane.margin>
                   <Insets top="130.0" />
                </FlowPane.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="SELLING">
+            <Button mnemonicParsing="false" onAction="#gotosellingpart" prefHeight="120.0" prefWidth="120.0" text="SELLING">
                <FlowPane.margin>
                   <Insets top="130.0" />
                </FlowPane.margin>

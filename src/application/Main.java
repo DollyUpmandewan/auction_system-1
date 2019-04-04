@@ -48,6 +48,15 @@ public static void showBiddersScene() throws IOException {
     
 }
 
+public static void showSellerScene() throws IOException {
+	FXMLLoader loader = new FXMLLoader();
+	loader.setLocation(Main.class.getResource("selling/sellingpart.fxml"));
+	BorderPane sellingpart = loader.load();
+	mainLayout.setCenter(sellingpart);
+    
+}
+
+
 
 	public static void main(String[] args) {
 		launch(args);
