@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	private Stage primaryStage;
-	public static  BorderPane mainLayout;
+	public static BorderPane mainLayout;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
@@ -18,6 +18,7 @@ public class Main extends Application {
 		this.primaryStage.setTitle("Auction System App");
 		showMainView();
 		showMainItems();
+		
 	   }
    /** 
  * @throws IOException 
