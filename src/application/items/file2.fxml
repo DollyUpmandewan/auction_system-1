@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.items.Items_controll">
    <center>
       <SplitPane dividerPositions="0.27591973244147155" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <items>
@@ -85,6 +85,6 @@
       </Label>
    </top>
    <bottom>
-      <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Home" textFill="#dd2e2e" underline="true" BorderPane.alignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#dd2e2e" underline="true" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

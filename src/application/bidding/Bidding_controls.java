@@ -6,7 +6,8 @@ import application.Main;
 import javafx.fxml.FXML;
 
 public class Bidding_controls {
-		   @FXML
+		  
+	@FXML
 		   private void goHome() throws IOException 
 		   {
 			   Main.showMainItems();
