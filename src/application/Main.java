@@ -69,4 +69,16 @@ public static void showSellerScene() throws IOException {
 		mainLayout.setCenter(itempart);
 		
 	}
+	
+	public static void showSignUpPage() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("signup/JAva auc1.fxml"));
+		BorderPane signupauc = loader.load();
+		mainLayout.setCenter(signupauc);
+		
+	}
+	
+	
+	
 }
