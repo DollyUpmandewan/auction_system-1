@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bidding.Bidding_controls">
    <top>
       <Label graphicTextGap="5.0" text="BIDDING SECTION" textFill="#42d4eb" textOverrun="LEADING_ELLIPSIS" underline="true" wrapText="true" BorderPane.alignment="CENTER">
          <font>
@@ -48,6 +48,6 @@
       </SplitPane>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Home" textFill="#cd2121" underline="true" BorderPane.alignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#cd2121" underline="true" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
