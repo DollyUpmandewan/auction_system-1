@@ -13,10 +13,19 @@ public class MainItemsController {
 		Main.showBiddersScene();
 		 	
 	}
+	
 	@FXML
 	private void gotosellingpart() throws IOException {
 		
 		Main.showSellerScene();
 		 	
 	}
+
+
+@FXML
+private void gotoitemspart() throws IOException {
+	
+	Main.showitemsScence();
+	 	
+}
 }

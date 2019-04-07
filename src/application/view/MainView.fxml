@@ -9,14 +9,14 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" text="Button" />
+          <Button mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#da5050" underline="true" />
         </items>
       </ToolBar>
    </top>
    <bottom>
       <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#d32020" />
+            <Button mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#d32020" underline="true" />
          </children>
       </HBox>
    </bottom>

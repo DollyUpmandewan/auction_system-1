@@ -57,9 +57,16 @@ public static void showSellerScene() throws IOException {
     
 }
 
-
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		launch(args);
+	}
+	
+	public static void showitemsScence() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("items/file2.fxml"));
+		BorderPane itempart = loader.load();
+		mainLayout.setCenter(itempart);
+		
 	}
 }
