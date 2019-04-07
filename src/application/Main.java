@@ -2,14 +2,17 @@ package application;
 
 import java.io.IOException;
 
+import com.sun.scenario.effect.impl.prism.PrImage;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-	private Stage primaryStage;
+	private static Stage primaryStage;
 	public static BorderPane mainLayout;
 	
 	@Override
@@ -85,6 +88,22 @@ public static void showSellerScene() throws IOException {
 		loader.setLocation(Main.class.getResource("login/Java auc2.fxml"));
 		BorderPane signupauc = loader.load();
 		mainLayout.setCenter(signupauc);
+		
+	}
+	
+	public static void ShowAddStage() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("signup/Signuppage.fxml"));
+		BorderPane signuppage = loader.load();
+		
+		Stage AddDialogStage  = new Stage();
+		AddDialogStage.setTitle("SIGN UP TO THE PAGES");
+		AddDialogStage.initModality(Modality.WINDOW_MODAL);
+		AddDialogStage.initOwner(primaryStage);
+		Scene scene = new Scene(signuppage);
+		AddDialogStage.setScene(scene);
+		AddDialogStage.showAndWait(); 
 		
 	}
 	

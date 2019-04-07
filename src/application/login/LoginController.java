@@ -10,7 +10,7 @@ public class LoginController {
 	@FXML
 	   private void gotoSignup() throws IOException 
 	   {
-		   Main.showSignUpPage();
+		   Main.ShowAddStage();
 	   }
 	 @FXML
 	   private void goHome() throws IOException 
