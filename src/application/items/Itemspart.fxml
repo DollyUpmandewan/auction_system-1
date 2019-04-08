@@ -74,11 +74,11 @@
    <right>
       <TableView prefHeight="441.0" prefWidth="461.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="77.0" text="Item name" />
-          <TableColumn prefWidth="99.0" text="Starting bid:" />
-            <TableColumn prefWidth="72.0" text="Item Id:" />
-            <TableColumn prefWidth="81.0" text="Category" />
-            <TableColumn prefWidth="131.0" text="Sellers Name:" />
+          <TableColumn fx:id="columnItemname" prefWidth="77.0" text="Item name" />
+          <TableColumn fx:id="columnStartingbid" prefWidth="99.0" text="Starting bid:" />
+            <TableColumn fx:id="columnItemId" prefWidth="72.0" text="Item Id:" />
+            <TableColumn fx:id="columncategory" prefWidth="81.0" text="Category" />
+            <TableColumn fx:id="columnSellernname" prefWidth="131.0" text="Sellers Name:" />
         </columns>
       </TableView>
    </right>
