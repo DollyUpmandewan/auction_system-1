@@ -72,7 +72,7 @@
       </AnchorPane>
    </left>
    <right>
-      <TableView prefHeight="441.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tableproduct" prefHeight="441.0" prefWidth="461.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="columnItemname" prefWidth="77.0" text="Item name" />
           <TableColumn fx:id="columnStartingbid" prefWidth="99.0" text="Starting bid:" />
