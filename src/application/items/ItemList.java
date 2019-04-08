@@ -1,12 +1,35 @@
 package application.items;
 
-public class ItemList {
+import java.awt.event.ActionEvent;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import application.GetDataFromDB;
+import javafx.fxml.FXML;
+
+
+
+public class ItemList extends GetDataFromDB{
+	
+	public Connection c = null;
+	public Statement st = null;
+	public ResultSet rs = null;
+		
 
 	private String columnItemname;
 	public String columnStartingbid;
 	private String columnItemId;
 	private String columncategory;
 	private String columnSellernname;
+	
+	@FXML
+	public void  handleAddItems(ActionEvent event) {
+		String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
+		String 
+		
+	}
+	
 
 	public ItemList(String columnItemname, String columnStartingbid, String columnItemId, String columncategory,
 			String columnSellernname) {
