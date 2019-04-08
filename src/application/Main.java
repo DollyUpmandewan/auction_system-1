@@ -1,7 +1,5 @@
 package application;
 
-import application.signup.*;
-import application.view.MainItemsController;
 
 import java.io.IOException;
 
@@ -90,7 +88,7 @@ public static void showSellerScene() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("login/Java auc2.fxml"));
 		BorderPane signupauc = loader.load();
-		mainLayout.setCenter(signupauc);
+		mainLayout.setCenter(signupauc); 
 		
 	}
 	
