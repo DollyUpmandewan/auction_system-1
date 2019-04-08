@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 
 public class SignupController {
+	public int age;
 	//This was created fro the main options like to push into the data and take them out 
 	@FXML
 	private TextField nameField;
@@ -40,8 +41,8 @@ public class SignupController {
 		Calendar now = Calendar.getInstance();
 		int year = now.get(Calendar.YEAR);
 		int birthYear = (DateOfBirth.getValue().getYear());
-		int age = year - birthYear;
-		agefield.setText(Integer.toString(age)+ "Years");
+		this.age = year - birthYear;
+		agefield.setText(Integer.toString(this.age)+ "Years");
 		
 		
 	}

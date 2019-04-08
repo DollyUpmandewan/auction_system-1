@@ -22,10 +22,10 @@ public class MainItemsController {
 	}
 
 
-@FXML
-private void gotoitemspart() throws IOException {
+	@FXML
+	private void gotoitemspart() throws IOException {
 	
-	Main.showitemsScence();
+		Main.showitemsScence();
 	 	
-}
+	}
 }

@@ -9,7 +9,7 @@
    <center>
       <FlowPane hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" text="ITEMS ">
+            <Button mnemonicParsing="false" onAction="#gotoitemspart" prefHeight="120.0" prefWidth="120.0" text="ITEMS ">
                <FlowPane.margin>
                   <Insets top="130.0" />
                </FlowPane.margin>

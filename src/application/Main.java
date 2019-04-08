@@ -1,8 +1,11 @@
 package application;
 
+import application.signup.*;
+import application.view.MainItemsController;
+
 import java.io.IOException;
 
-import com.sun.scenario.effect.impl.prism.PrImage;
+//import com.sun.scenario.effect.impl.prism.PrImage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,8 +20,8 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		this.primaryStage= primaryStage;
-		this.primaryStage.setTitle("Auction System App");
+		Main.primaryStage= primaryStage;
+		Main.primaryStage.setTitle("Auction System App");
 		showMainView();
 		showMainItems();
 		
