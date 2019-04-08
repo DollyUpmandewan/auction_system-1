@@ -36,7 +36,7 @@ public class SignupController {
 		   Main.showMainItems();
 	   }
 	@FXML
-	private void showAge() {
+	public void showAge() {
 		Calendar now = Calendar.getInstance();
 		int year = now.get(Calendar.YEAR);
 		int birthYear = (DateOfBirth.getValue().getYear());

@@ -25,7 +25,7 @@
                   <Insets left="95.0" />
                </HBox.margin>
             </Button>
-            <Hyperlink text="Aleady a member? LOGIN">
+            <Hyperlink onAction="#gologinpage" text="Aleady a member? LOGIN">
                <padding>
                   <Insets left="80.0" />
                </padding>
