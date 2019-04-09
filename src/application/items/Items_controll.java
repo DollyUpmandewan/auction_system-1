@@ -4,106 +4,77 @@ import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import com.sun.xml.internal.ws.addressing.ProblemAction;
-
 import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class Items_controll extends GetDataFromDB implements Initializable{
-	@FXML
-	public void  handleAddItems(ActionEvent event) {
-
-		/*	String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
-			
-			String itname = txt_item_name.getText();
-			
-			double Sbingbid = Double.valueOf(txt_Startingbid.getText());
-			
-			String ItId = txt_ItemId.getText();
-			
-			String category = txt_category.getText();
-			
-			String Sname = txt_Sellername.getText();
-			
-			try {
-				st = c.prepareStatement(sql);	
-				st.setString(1,itname);
-				st.setString(2,Sbingbid);
-				st.setString(3,ItId);
-				st.setString(4,category);
-				st.setString(5,Sname);
-				
-			}
-			*/
-
-			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
-			gi.getItems();
-			/* 
-			 * Sample Implementation is
-			 * 
-			 * 
-			 * int columnItemId = gi.item_id[0];
-			 * String columnItemname = gi.item_name[0];
-			 * int sellerID = gi.seller_id[0];
-			 * int columnStartingbid = gi.start_bid[0];
-			 * String columncategory = gi.category[0]; // All of the tuples in the tables are stored in these arrays
-			 * 								// The first tuple will be found in 0th index of each array.
-			 * 
-			 * 
-			 * 				// e.g. suppose the first tuple in the table is like (1001,Knife,1254,50000,weapons)
-			 * 				// then it will be stored as 
-			 * 				//							 gi.item_id[0] = 1001;
-			 * 				// 							 gi.item_name[0] = "Knife";
-			 * 				//							 gi.seller_id[0] = 1254;
-			 * 				//							 gi.start_bid[0] = 50000;
-			 * 				//							 gi.category[0] = "weapons";
-			 *
-	*/
-		}
+public class Items_controll extends GetDataFromDB{
+	int i=0,j=1,k=2;
 		
 	@FXML
-	public TableView<?> tableproduct;
+	public Label row11;
 	
 	@FXML
-	public TableColumn<?,?> columnItemname;
-	
+	public Label row12;
+	@FXML
+	public Label row13;
+	@FXML
+	public Label row14;
+	@FXML
+	public Label row15;
+	@FXML
+	public Label row21;
+	@FXML
+	public Label row22;
+	@FXML
+	public Label row23;
+	@FXML
+	public Label row24;
+	@FXML
+	public Label row25;
+	@FXML
+	public Label row31;
+	@FXML
+	public Label row32;
+	@FXML
+	public Label row33;
+	@FXML
+	public Label row34;
+	@FXML
+	public Label row35;
 	
 	@FXML
-	public TableColumn<?,?> columnStartingbid;
-	
-	
-	@FXML
-	public TableColumn<?,?> columnItemId;
-	
-	
-	@FXML
-	public TableColumn<?,?> columncategory;
-	
-	@FXML
-	public TableColumn<?,?> columnSellernname;
-	
-	
-	
+	public void  handleAddItems(ActionEvent event) {
+			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
+			gi.getItems();
+			i+=2;
+			j+=2;
+			k+=2;
+			row11.setText(gi.item_name[i]);
+			row12.setText(""+gi.start_bid[i]);
+			row13.setText(""+gi.item_id[i]);
+			row14.setText(gi.category[i]);
+			row15.setText(""+gi.seller_id[i]);
+			row21.setText(gi.item_name[j]);
+			row22.setText(""+gi.start_bid[j]);
+			row23.setText(""+gi.item_id[j]);
+			row24.setText(gi.category[j]);
+			row25.setText(""+gi.seller_id[j]);
+			row31.setText(gi.item_name[k]);
+			row32.setText(""+gi.start_bid[k]);
+			row33.setText(""+gi.item_id[k]);
+			row34.setText(gi.category[k]);
+			row35.setText(""+gi.seller_id[k]);
+			
+		}
 	@FXML
 	private void goHome() throws IOException {
 		Main.showMainItems();
 	}
 
-
-  public void initialize(URL url,ResourceBundle rb)
-   {
-	con = dba.DBConnection.pmartConnection();
-
-   }
-  
-  public void setCellTable() {
-	  columnItemname.setCellValueFactory(new PropertyValueFactory<>(""));
-	  
-  }
 }
