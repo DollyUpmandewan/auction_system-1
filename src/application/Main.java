@@ -61,7 +61,7 @@ public static void showSellerScene() throws IOException {
     
 }
 
-public static void showitemsScence() throws IOException {
+public static void showitemsScene() throws IOException {
 	// TODO Auto-generated method stub
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("items/Itemspart.fxml"));

@@ -25,7 +25,7 @@ public class MainItemsController {
 	@FXML
 	public void gotoitemspart() throws IOException {
 	
-		Main.showitemsScence();
+		Main.showitemsScene();
 	 	
 	}
 	
