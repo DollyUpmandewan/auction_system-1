@@ -1,4 +1,4 @@
-package welcomeController;
+package application.welcome;
 
 import java.io.IOException;
 

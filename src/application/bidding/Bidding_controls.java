@@ -1,8 +1,6 @@
 package application.bidding;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
-
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -45,13 +43,13 @@ public class Bidding_controls  {
 	    private Label bidchoicecolumn;
 
 	    @FXML
-	    void goHome(ActionEvent event) throws IOException {
+	    void goHome() throws IOException {
 //TODO : Add the even handling here bro
 	    	Main.showMainItems();
 	    }
 	    
 	    @FXML
-	    void goAuction(ActionEvent event) throws IOException {
+	    void goAuction() throws IOException {
 
 	    	Main.showAuction();
 	    }

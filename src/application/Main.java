@@ -21,10 +21,18 @@ public class Main extends Application {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
 		showMainView();
+		showWelcome();
 		showMainItems();
 		
 	   }
-   /** 
+   private void showWelcome() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("welcome/Welcomepart.fxml"));
+		BorderPane wel = loader.load();
+		mainLayout.setCenter(wel);
+	}
+/** 
  * @throws IOException 
  * 
  */
