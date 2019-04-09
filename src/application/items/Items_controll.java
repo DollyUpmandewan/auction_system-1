@@ -1,6 +1,5 @@
 package application.items;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -86,7 +85,7 @@ public class Items_controll extends GetDataFromDB{
 	    private Label row35;
 	
 	@FXML
-	public void  handleAddItems(ActionEvent event) {
+	public void  handleAddItems() {
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
 		try {
