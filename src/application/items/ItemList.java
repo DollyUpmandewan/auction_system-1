@@ -32,6 +32,7 @@ public class ItemList extends GetDataFromDB{
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
+<<<<<<< HEAD
 		String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
 		
 		String itname = txt_item_name.getText();
@@ -54,6 +55,30 @@ public class ItemList extends GetDataFromDB{
 			
 		}
 		
+=======
+		GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
+		gi.getItems();
+		/* 
+		 * Sample Implementation is
+		 * 
+		 * 
+		 * int itemID = gi.item_id[0];
+		 * String itemName = gi.item_name[0];
+		 * int sellerID = gi.seller_id[0];
+		 * int startBid = gi.start_bid[0];
+		 * String cat = gi.category[0]; // All of the tuples in the tables are stored in these arrays
+		 * 								// The first tuple will be found in 0th index of each array.
+		 * 
+		 * 
+		 * 				// e.g. suppose the first tuple in the table is like (1001,Knife,1254,50000,weapons)
+		 * 				// then it will be stored as 
+		 * 				//							 gi.item_id[0] = 1001;
+		 * 				// 							 gi.item_name[0] = "Knife";
+		 * 				//							 gi.seller_id[0] = 1254;
+		 * 				//							 gi.start_bid[0] = 50000;
+		 * 				//							 gi.category[0] = "weapons";
+		 */
+>>>>>>> 3bc4c2c882ee20e21be35bf799372b11446f7378
 	}
 	
 
@@ -97,7 +122,7 @@ public class ItemList extends GetDataFromDB{
 	}
 
 	/**
-	 * @param columncategory the columncategory to set
+	 * @param columncategory the column category to set
 	 */
 	public void setColumncategory(String columncategory) {
 		this.columncategory = columncategory;
