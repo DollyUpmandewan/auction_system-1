@@ -5,16 +5,16 @@ import java.sql.*;
 import java.util.*;
 
 public class GetDataFromDB{
-	class GetItems{
-		int n = 200;
-		int item_id[] = new int[n];
-		String item_name[] = new String[n];
-		int seller_id[] = new int[n];
-		int start_bid[] = new int[n];
-		String category[] = new String[n];
+	public class GetItems{
+		public int n = 200;
+		public int item_id[] = new int[n];
+		public String item_name[] = new String[n];
+		public int seller_id[] = new int[n];
+		public int start_bid[] = new int[n];
+		public String category[] = new String[n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getItems() {
+		public void getItems() {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
