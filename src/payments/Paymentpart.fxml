@@ -13,8 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0CC0B8;" BorderPane.alignment="CENTER">
          <children>
@@ -33,11 +32,11 @@
                   <Label text="Name:" />
                   <Label text="Postal Addrerss:" GridPane.rowIndex="1" />
                   <Label text="Contact No.:" GridPane.rowIndex="2" />
-                  <TextField prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: yellow;" GridPane.columnIndex="1" />
-                  <TextField style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="paymentnameid" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: yellow;" GridPane.columnIndex="1" />
+                  <TextField fx:id="postaladdid" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="cnopayid" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Payment Method:" GridPane.rowIndex="3" />
-                  <ComboBox prefWidth="150.0" promptText="Select a method" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <ComboBox fx:id="paymodeid" prefWidth="150.0" promptText="Select a method" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <cursor>
                         <Cursor fx:constant="V_RESIZE" />
                      </cursor>
@@ -52,7 +51,8 @@
                   <Glow level="0.0" />
                </effect>
             </Label>
-            <Button layoutX="66.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="SUBMIT" textFill="#cd2d2d" underline="true" />
+            <Button fx:id="paysubmitId" layoutX="66.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="SUBMIT" textFill="#cd2d2d" underline="true" />
+            <Button fx:id="payhomeid" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: white;" text="HOME" textFill="#fc3a3a" underline="true" />
          </children>
       </AnchorPane>
    </center>

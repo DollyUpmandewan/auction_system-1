@@ -58,7 +58,7 @@
                                         <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="209.0" vgrow="SOMETIMES" />
                                       </rowConstraints>
                                        <children>
-                                          <Label text="ITEM">
+                                          <Label fx:id="biditemcolumn" text="ITEM">
                                              <GridPane.margin>
                                                 <Insets left="40.0" />
                                              </GridPane.margin>
@@ -66,7 +66,7 @@
                                                 <Font name="Bell MT" size="17.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER" prefWidth="116.0" text="IMAGE " textAlignment="CENTER" GridPane.columnIndex="1">
+                                          <Label fx:id="bidimagecolumn" alignment="CENTER" prefWidth="116.0" text="IMAGE " textAlignment="CENTER" GridPane.columnIndex="1">
                                              <GridPane.margin>
                                                 <Insets />
                                              </GridPane.margin>
@@ -74,7 +74,7 @@
                                                 <Font name="Bell MT" size="16.0" />
                                              </font>
                                           </Label>
-                                          <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0" text="CHOOSE " textAlignment="CENTER" GridPane.columnIndex="2">
+                                          <Label fx:id="bidchoicecolumn" alignment="CENTER" contentDisplay="CENTER" lineSpacing="5.0" text="CHOOSE " textAlignment="CENTER" GridPane.columnIndex="2">
                                              <font>
                                                 <Font name="Bell MT" size="15.0" />
                                              </font>

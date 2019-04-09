@@ -8,45 +8,78 @@ import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
 		
-	@FXML
-	public Label row11;
-	
-	@FXML
-	public Label row12;
-	@FXML
-	public Label row13;
-	@FXML
-	public Label row14;
-	@FXML
-	public Label row15;
-	@FXML
-	public Label row21;
-	@FXML
-	public Label row22;
-	@FXML
-	public Label row23;
-	@FXML
-	public Label row24;
-	@FXML
-	public Label row25;
-	@FXML
-	public Label row31;
-	@FXML
-	public Label row32;
-	@FXML
-	public Label row33;
-	@FXML
-	public Label row34;
-	@FXML
-	public Label row35;
+	 @FXML
+	    private Text Itemname;
+
+	    @FXML
+	    private Text StartingBid;
+
+	    @FXML
+	    private Text ItemId;
+
+	    @FXML
+	    private Text ItCategoer;
+
+	    @FXML
+	    private Text itSellerid;
+
+	    @FXML
+	    private Button ItAddvalue;
+
+	    @FXML
+	    private Label row11;
+
+	    @FXML
+	    private Label row12;
+
+	    @FXML
+	    private Label row13;
+
+	    @FXML
+	    private Label row14;
+
+	    @FXML
+	    private Label row15;
+
+	    @FXML
+	    private Label row21;
+
+	    @FXML
+	    private Label row22;
+
+	    @FXML
+	    private Label row23;
+
+	    @FXML
+	    private Label row24;
+
+	    @FXML
+	    private Label row25;
+
+	    @FXML
+	    private Label row31;
+
+	    @FXML
+	    private Label row32;
+
+	    @FXML
+	    private Label row33;
+
+	    @FXML
+	    private Label row34;
+
+	    @FXML
+	    private Label row35;
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
