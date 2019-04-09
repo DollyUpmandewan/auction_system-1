@@ -5,17 +5,11 @@ import java.io.IOException;
 import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
-<<<<<<< HEAD
-import javafx.fxml.Initializable;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
-=======
-import javafx.scene.control.Label;
->>>>>>> a80c09d84246a97aafb3a6f8bd07b13e7c4bac9c
+
 
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
@@ -84,7 +78,7 @@ public class Items_controll extends GetDataFromDB{
 	    private Label row35;
 	
 	@FXML
-	public void  handleAddItems(ActionEvent event) {
+	public void  handleAddItems(javafx.event.ActionEvent event) {
 			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 			gi.getItems();
 			i+=2;

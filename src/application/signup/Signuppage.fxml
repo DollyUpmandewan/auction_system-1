@@ -20,7 +20,7 @@
    <bottom>
       <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#goHome" text="SignUp">
+            <Button fx:id="signupbtn" mnemonicParsing="false" onAction="#goHome" text="SignUp">
                <HBox.margin>
                   <Insets left="95.0" />
                </HBox.margin>

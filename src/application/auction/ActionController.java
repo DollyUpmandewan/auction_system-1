@@ -1,4 +1,4 @@
-package Auction;
+package application.auction;
 
 import java.io.IOException;
 import java.time.temporal.TemporalField;

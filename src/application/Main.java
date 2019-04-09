@@ -13,7 +13,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-	private static Stage primaryStage;
+	public static Stage primaryStage;
 	public static BorderPane mainLayout;
 	
 	@Override
@@ -45,6 +45,16 @@ public static void showMainItems() throws IOException {
 	
 }
 
+public static void showAuction() throws IOException {
+	FXMLLoader loader = new FXMLLoader();
+	loader.setLocation(Main.class.getResource("auction/Auctionpage.fxml"));
+	BorderPane auctionpage = loader.load();
+	mainLayout.setCenter(auctionpage);
+	
+}
+
+
+
 public static void showBiddersScene() throws IOException {
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("bidding/Biddingpart.fxml"));
@@ -65,8 +75,8 @@ public static void showitemsScene() throws IOException {
 	// TODO Auto-generated method stub
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("items/Itemspart.fxml"));
-	BorderPane itempart = loader.load();
-	mainLayout.setCenter(itempart);
+	BorderPane itemspart = loader.load();
+	mainLayout.setCenter(itemspart);
 	
 }
 

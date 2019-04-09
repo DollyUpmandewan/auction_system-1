@@ -5,9 +5,36 @@ import java.io.IOException;
 
 import application.Main;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class Bidding_controls  {
+	@FXML
+    private Label bid11;
+
+    @FXML
+    private Label bid21;
+
+    @FXML
+    private Label bid31;
+
+    @FXML
+    private Label bid12;
+
+    @FXML
+    private Label bid22;
+
+    @FXML
+    private Label bid32;
+
+    @FXML
+    private Button gobidbtn1;
+
+    @FXML
+    private Button gobidbtn2;
+
+    @FXML
+    private Button gobidbtn3;
 	 @FXML
 	    private Label biditemcolumn;
 
@@ -22,7 +49,13 @@ public class Bidding_controls  {
 //TODO : Add the even handling here bro
 	    	Main.showMainItems();
 	    }
+	    
+	    @FXML
+	    void goAuction(ActionEvent event) throws IOException {
 
+	    	Main.showAuction();
+	    }
+	    
 		  
 	
 	}

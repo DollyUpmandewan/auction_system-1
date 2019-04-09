@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 
 
 <BorderPane prefHeight="461.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E7AF5A;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="33.0" layoutY="49.0" prefHeight="267.0" prefWidth="257.0" />
+            <Button layoutX="429.0" layoutY="377.0" mnemonicParsing="false" style="-fx-background-color: white;" text="NEXT">
+               <textFill>
+                  <LinearGradient endX="0.6952380952380952" endY="0.45238095238095233" startX="0.5666666666666667">
+                     <stops>
+                        <Stop color="#f20c0c" />
+                        <Stop color="#3bd916" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
    </center>
 </BorderPane>
