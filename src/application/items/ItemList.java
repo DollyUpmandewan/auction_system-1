@@ -27,7 +27,7 @@ public class ItemList extends GetDataFromDB{
 	public void  handleAddItems(ActionEvent event) {
 		GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 		gi.getItems();
-		/*
+		/* 
 		 * Sample Implementation is
 		 * 
 		 * 
@@ -40,7 +40,8 @@ public class ItemList extends GetDataFromDB{
 		 * 
 		 * 
 		 * 				// e.g. suppose the first tuple in the table is like (1001,Knife,1254,50000,weapons)
-		 * 				// then it will be stored as gi.item_id[0] = 1001;
+		 * 				// then it will be stored as 
+		 * 				//							 gi.item_id[0] = 1001;
 		 * 				// 							 gi.item_name[0] = "Knife";
 		 * 				//							 gi.seller_id[0] = 1254;
 		 * 				//							 gi.start_bid[0] = 50000;
@@ -89,7 +90,7 @@ public class ItemList extends GetDataFromDB{
 	}
 
 	/**
-	 * @param columncategory the columncategory to set
+	 * @param columncategory the column category to set
 	 */
 	public void setColumncategory(String columncategory) {
 		this.columncategory = columncategory;

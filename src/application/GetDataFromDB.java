@@ -32,7 +32,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getItemById(int id) {
+		public void getItemById(int id) {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from items where item_id ="+id);
@@ -47,7 +47,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getItemByName(String name) {
+		public void getItemByName(String name) {
 			try {
 				int i =0;
 				Statement st = c.createStatement();
@@ -64,7 +64,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getItemBySellerId(int seller) {
+		public void getItemBySellerId(int seller) {
 			try {
 				int i =0;
 				Statement st = c.createStatement();
@@ -81,7 +81,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getItemByStartBid(int bid) {
+		public void getItemByStartBid(int bid) {
 			try {
 				int i =0;
 				Statement st = c.createStatement();
@@ -98,7 +98,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getItemByCategory(int cat) {
+		public void getItemByCategory(int cat) {
 			try {
 				int i =0;
 				Statement st = c.createStatement();
@@ -116,16 +116,16 @@ public class GetDataFromDB{
 			}
 		}
 	}
-	class GetResearch{
-		int n = 200;
-		int id [] = new int[n];
-		String original_owner [] = new String[n];
-		int age [] = new int [n];
-		String find_loc [] = new String [n];
-		int item_id [] = new int [n];
+	public class GetResearch{
+		public int n = 200;
+		public int id [] = new int[n];
+		public String original_owner [] = new String[n];
+		public int age [] = new int [n];
+		public String find_loc [] = new String [n];
+		public int item_id [] = new int [n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getResearch() {
+		public void getResearch() {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research");
@@ -144,7 +144,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getResearchByOwner(String owner) {
+		public void getResearchByOwner(String owner) {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where original_owner="+owner);
@@ -163,7 +163,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getResearchByAge(int age1) {
+		public void getResearchByAge(int age1) {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where age="+age1);
@@ -181,7 +181,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getResearchByLoc(String loc) {
+		public void getResearchByLoc(String loc) {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where find_loc="+loc);
@@ -200,7 +200,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getResearchByItemId(int itemid) {
+		public void getResearchByItemId(int itemid) {
 			try {
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where item_id="+itemid);
@@ -219,16 +219,16 @@ public class GetDataFromDB{
 			}
 		}
 	}
-	class GetSeller{
-		int n =200;
-		int seller_id[] = new int[n];
-		String email[] = new String[n];
-		String fname[] = new String[n];
-		String lname[]= new String[n];
-		String contact_no[]= new String[n];
+	public class GetSeller{
+		public int n =200;
+		public int seller_id[] = new int[n];
+		public String email[] = new String[n];
+		public String fname[] = new String[n];
+		public String lname[]= new String[n];
+		public String contact_no[]= new String[n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getSeller() {
+		public void getSeller() {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -247,7 +247,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByID(int id) {
+		public void getSellerByID(int id) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -265,7 +265,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByEmail(String email_id) {
+		public void getSellerByEmail(String email_id) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -283,7 +283,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByContact(String contact) {
+		public void getSellerByContact(String contact) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -301,7 +301,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByFName(String name) {
+		public void getSellerByFName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -319,7 +319,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByLName(String name) {
+		public void getSellerByLName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -338,17 +338,17 @@ public class GetDataFromDB{
 			
 		}
 	}
-	class GetBidder{
-		int n =200;
-		int bidder_id[] = new int[n];
-		String email[] = new String[n];
-		String fname[] = new String[n];
-		String lname[]= new String[n];
-		String contact_no[]= new String[n];
-		String address[] = new String[n];
+	public class GetBidder{
+		public int n =200;
+		public int bidder_id[] = new int[n];
+		public String email[] = new String[n];
+		public String fname[] = new String[n];
+		public String lname[]= new String[n];
+		public String contact_no[]= new String[n];
+		public String address[] = new String[n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getBidder() {
+		public void getBidder() {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -369,7 +369,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getBidderByID(int id) {
+		public void getBidderByID(int id) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -388,7 +388,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getBidderByEmail(String email_id) {
+		public void getBidderByEmail(String email_id) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -407,7 +407,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getBidderByContact(String contact) {
+		public void getBidderByContact(String contact) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -426,7 +426,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getSellerByFName(String name) {
+		public void getSellerByFName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -445,7 +445,7 @@ public class GetDataFromDB{
 			}
 			
 		}
-		void getBidderByLName(String name) {
+		public void getBidderByLName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -465,15 +465,15 @@ public class GetDataFromDB{
 			
 		}
 	}
-	class Admin{
-		int n = 200;
-		int admin_id []  = new int[n];
-		String fname[] = new String[n];
-		String lname[] = new String[n];
-		String email[] = new String[n];
+	public class Admin{
+		public int n = 200;
+		public int admin_id []  = new int[n];
+		public String fname[] = new String[n];
+		public String lname[] = new String[n];
+		public String email[] = new String[n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getAdmins() {
+		public void getAdmins() {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -489,7 +489,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getAdminsById(int id) {
+		public void getAdminsById(int id) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -505,7 +505,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getAdminsByFName(String name) {
+		public void getAdminsByFName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -521,7 +521,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getAdminsByLName(String name) {
+		public void getAdminsByLName(String name) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -537,7 +537,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getAdminsByEmail(String email) {
+		public void getAdminsByEmail(String email) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -554,15 +554,15 @@ public class GetDataFromDB{
 			}
 		}
 	}
-	class GetBidHistory{
-		int n = 200;
-		int bid []  = new int[n];
-		int bid_id []  = new int[n];
-		int bidder_id []  = new int[n];
-		int item_id []  = new int[n];
+	public class GetBidHistory{
+		public int n = 200;
+		public int bid []  = new int[n];
+		public int bid_id []  = new int[n];
+		public int bidder_id []  = new int[n];
+		public int item_id []  = new int[n];
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
-		void getBids() {
+		public void getBids() {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -578,7 +578,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getBidsByBidder(int bidder) {
+		public void getBidsByBidder(int bidder) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
@@ -594,7 +594,7 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		void getBidsByItem(int item) {
+		public void getBidsByItem(int item) {
 			try {
 				int i = 0;
 				Statement st = c.createStatement();
