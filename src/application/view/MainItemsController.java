@@ -28,4 +28,6 @@ public class MainItemsController {
 		Main.showitemsScence();
 	 	
 	}
+	
+	
 }
