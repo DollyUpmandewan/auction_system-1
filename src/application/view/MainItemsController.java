@@ -15,7 +15,7 @@ public class MainItemsController {
 	}
 	
 	@FXML
-	private void gotosellingpart() throws IOException {
+	public void gotosellingpart() throws IOException {
 		
 		Main.showSellerScene();
 		 	
@@ -23,7 +23,7 @@ public class MainItemsController {
 
 
 	@FXML
-	private void gotoitemspart() throws IOException {
+	public void gotoitemspart() throws IOException {
 	
 		Main.showitemsScence();
 	 	

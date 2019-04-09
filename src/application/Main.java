@@ -65,8 +65,8 @@ public static void showitemsScence() throws IOException {
 	// TODO Auto-generated method stub
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("items/Itemspart.fxml"));
-	BorderPane itrt = loader.load();
-	mainLayout.setCenter(itrt);
+	BorderPane itempart = loader.load();
+	mainLayout.setCenter(itempart);
 	
 }
 

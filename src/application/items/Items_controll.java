@@ -5,12 +5,15 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.sun.xml.internal.ws.addressing.ProblemAction;
+
 import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class Items_controll extends GetDataFromDB implements Initializable{
 	@FXML
@@ -68,7 +71,7 @@ public class Items_controll extends GetDataFromDB implements Initializable{
 	public TableView<?> tableproduct;
 	
 	@FXML
-	public TableView<?> columnItemname;
+	public TableColumn<?,?> columnItemname;
 	
 	
 	@FXML
@@ -95,6 +98,12 @@ public class Items_controll extends GetDataFromDB implements Initializable{
 
   public void initialize(URL url,ResourceBundle rb)
    {
-	
+	con = dba.DBConnection.pmartConnection();
+
    }
+  
+  public void setCellTable() {
+	  columnItemname.setCellValueFactory(new PropertyValueFactory<>(""));
+	  
+  }
 }
