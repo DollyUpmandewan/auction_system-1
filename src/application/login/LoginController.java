@@ -5,6 +5,8 @@ import java.io.IOException;
 import application.Main;
 import javafx.fxml.FXML;
 
+//TODO add the Fields here just as the ones in the ones in the sign up page.
+//TODO Handle events using the event handlers here. 
 public class LoginController {
 
 	@FXML
