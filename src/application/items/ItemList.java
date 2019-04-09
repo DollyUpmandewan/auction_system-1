@@ -1,5 +1,6 @@
 package application.items;
 
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -17,16 +18,41 @@ public class ItemList extends GetDataFromDB{
 	public ResultSet rs = null;
 		
 
-	private String columnItemname;
+	public String columnItemname;
 	public String columnStartingbid;
-	private String columnItemId;
-	private String columncategory;
-	private String columnSellernname;
+	public String columnItemId;
+	public String columncategory;
+	public String columnSellernname;
+	
+	private TextField txt_item_name;
+	private TextField txt_Startingbid;
+	private TextField txt_ItemId;
+	private TextField txt_category;
+	private TextField txt_Sellername;
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
 		String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
-		String 
+		
+		String itname = txt_item_name.getText();
+		
+		double Sbingbid = Double.valueOf(txt_Startingbid.getText());
+		
+		String ItId = txt_ItemId.getText();
+		
+		String category = txt_category.getText();
+		
+		String Sname = txt_Sellername.getText();
+		
+		try {
+			st = c.prepareStatement(sql);	
+			st.setString(1,itname);
+			st.setString(2,Sbingbid);
+			st.setString(3,ItId);
+			st.setString(4,category);
+			st.setString(5,Sname);
+			
+		}
 		
 	}
 	
