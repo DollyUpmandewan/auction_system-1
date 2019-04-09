@@ -1,9 +1,7 @@
 package application.items;
 
 import java.awt.event.ActionEvent;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 import application.GetDataFromDB;
 import javafx.fxml.FXML;
@@ -12,16 +10,13 @@ import javafx.fxml.FXML;
 
 public class ItemList extends GetDataFromDB{
 	
-	public Connection c = null;
-	public Statement st = null;
-	public ResultSet rs = null;
-		
-
+	//TODO Make changes according to the implementation of the class GetDataFromDB
 	private String columnItemname;
-	public String columnStartingbid;
-	private String columnItemId;
-	private String columncategory;
-	private String columnSellernname;
+	public String columnStartingbid; // This is an item
+	private String columnItemId;  // Should be and integer value.
+	private String columncategory; 
+	private String columnSellernname;  // columnSellerID and should be an int. Since this needs to be changed
+									   // at multiple places throughout the files and controllers, I didn't change it here.
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
@@ -31,11 +26,11 @@ public class ItemList extends GetDataFromDB{
 		 * Sample Implementation is
 		 * 
 		 * 
-		 * int itemID = gi.item_id[0];
-		 * String itemName = gi.item_name[0];
+		 * int columnItemId = gi.item_id[0];
+		 * String columnItemname = gi.item_name[0];
 		 * int sellerID = gi.seller_id[0];
-		 * int startBid = gi.start_bid[0];
-		 * String cat = gi.category[0]; // All of the tuples in the tables are stored in these arrays
+		 * int columnStartingbid = gi.start_bid[0];
+		 * String columncategory = gi.category[0]; // All of the tuples in the tables are stored in these arrays
 		 * 								// The first tuple will be found in 0th index of each array.
 		 * 
 		 * 

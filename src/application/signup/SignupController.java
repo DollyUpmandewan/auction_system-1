@@ -10,7 +10,8 @@ import javafx.scene.control.DatePicker;
 
 public class SignupController {
 	public int age;
-	//This was created fro the main options like to push into the data and take them out 
+	//This was created from the main options like to push into the data and take them out 
+	// Seen(by avinash);
 	@FXML
 	private TextField nameField;
 	
