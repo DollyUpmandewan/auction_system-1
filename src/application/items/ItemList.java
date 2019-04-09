@@ -11,7 +11,7 @@ import javafx.fxml.FXML;
 
 public class ItemList extends GetDataFromDB{
 	
-<<<<<<< HEAD
+
 	public Connection c = null;
 	public Statement st = null;
 	public ResultSet rs = null;
@@ -28,7 +28,7 @@ public class ItemList extends GetDataFromDB{
 	private TextField txt_ItemId;
 	private TextField txt_category;
 	private TextField txt_Sellername;
-=======
+
 	//TODO Make changes according to the implementation of the class GetDataFromDB
 	private String columnItemname;
 	public String columnStartingbid; // This is an item
@@ -36,12 +36,12 @@ public class ItemList extends GetDataFromDB{
 	private String columncategory; 
 	private String columnSellernname;  // columnSellerID and should be an int. Since this needs to be changed
 									   // at multiple places throughout the files and controllers, I didn't change it here.
->>>>>>> 73b3a5b3887f29116ba5e5bc6c233188026e08f8
+
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
-<<<<<<< HEAD
-		String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
+
+	/*	String sql = "Insert into items(item_name,Startingbid,ItemId,category,Sellername) Values(?,?,?,?,?)";
 		
 		String itname = txt_item_name.getText();
 		
@@ -63,7 +63,7 @@ public class ItemList extends GetDataFromDB{
 			
 		}
 		
-=======
+
 		GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 		gi.getItems();
 		/* 
@@ -85,10 +85,10 @@ public class ItemList extends GetDataFromDB{
 		 * 				//							 gi.seller_id[0] = 1254;
 		 * 				//							 gi.start_bid[0] = 50000;
 		 * 				//							 gi.category[0] = "weapons";
-		 */
->>>>>>> 3bc4c2c882ee20e21be35bf799372b11446f7378
+		 *
+
 	}
-	
+	*/
 
 	public ItemList(String columnItemname, String columnStartingbid, String columnItemId, String columncategory,
 			String columnSellernname) {
