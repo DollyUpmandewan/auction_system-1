@@ -2,20 +2,17 @@ package application.items;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import application.ConnectingMysql;
 import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
-<<<<<<< HEAD
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
-=======
-import javafx.scene.control.Label;
->>>>>>> a80c09d84246a97aafb3a6f8bd07b13e7c4bac9c
 
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
@@ -85,6 +82,15 @@ public class Items_controll extends GetDataFromDB{
 	
 	@FXML
 	public void  handleAddItems(ActionEvent event) {
+		ConnectingMysql co = new ConnectingMysql();
+		Connection c = co.getConnection();
+		try {
+			Statement st = c.createStatement();
+st.execute("insert into items values("+ItemId.getText()+","+Itemname.getText()+","+itSellerid.getText()+","+StartingBid.getText()+","+ItCategoer+")");
+		c.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 			gi.getItems();
 			i+=2;
