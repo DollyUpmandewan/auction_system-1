@@ -81,6 +81,8 @@ public static void showitemsScene() throws IOException {
 }
 
     public static void main(String[] args) {
+    	CommandLineDemo cld = new CommandLineDemo();
+    	cld.start();
 		launch(args);
 	}
 	

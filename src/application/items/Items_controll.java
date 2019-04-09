@@ -10,17 +10,14 @@ import application.ConnectingMysql;
 import application.GetDataFromDB;
 import application.Main;
 import javafx.fxml.FXML;
-<<<<<<< HEAD
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
-=======
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
->>>>>>> 2c7fa25b61cafa85c3a812ee3dd31a0cd71e3665
 
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
@@ -89,9 +86,6 @@ public class Items_controll extends GetDataFromDB{
 	    private Label row35;
 	
 	@FXML
-<<<<<<< HEAD
-	public void  handleAddItems(javafx.event.ActionEvent event) {
-=======
 	public void  handleAddItems(ActionEvent event) {
 		ConnectingMysql co = new ConnectingMysql();
 		Connection c = co.getConnection();
@@ -102,7 +96,6 @@ st.execute("insert into items values("+ItemId.getText()+","+Itemname.getText()+"
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
->>>>>>> 2c7fa25b61cafa85c3a812ee3dd31a0cd71e3665
 			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 			gi.getItems();
 			i+=2;
