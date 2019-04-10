@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import javafx.scene.control.Button;
@@ -21,68 +22,83 @@ import javafx.scene.text.Text;
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
 		
-	 @FXML
-	    private Text Itemname;
+    @FXML
+    private TextField Itemname;
 
-	    @FXML
-	    private Text StartingBid;
+    @FXML
+    private TextField StartingBid;
 
-	    @FXML
-	    private Text ItemId;
+    @FXML
+    private TextField ItCategoer;
 
-	    @FXML
-	    private Text ItCategoer;
+    @FXML
+    private TextField itemidbid;
 
-	    @FXML
-	    private Text itSellerid;
+    @FXML
+    private TextField itSellerid;
 
-	    @FXML
-	    private Button ItAddvalue;
+    @FXML
+    private Button ItAddvalue;
 
-	    @FXML
-	    private Label row11;
+    @FXML
+    private Label row11;
 
-	    @FXML
-	    private Label row12;
+    @FXML
+    private Label row12;
 
-	    @FXML
-	    private Label row13;
+    @FXML
+    private Label row13;
 
-	    @FXML
-	    private Label row14;
+    @FXML
+    private Label row14;
 
-	    @FXML
-	    private Label row15;
+    @FXML
+    private Label row15;
 
-	    @FXML
-	    private Label row21;
+    @FXML
+    private Label row21;
 
-	    @FXML
-	    private Label row22;
+    @FXML
+    private Label row22;
 
-	    @FXML
-	    private Label row23;
+    @FXML
+    private Label row23;
 
-	    @FXML
-	    private Label row24;
+    @FXML
+    private Label row24;
 
-	    @FXML
-	    private Label row25;
+    @FXML
+    private Label row25;
 
-	    @FXML
-	    private Label row31;
+    @FXML
+    private Label row31;
 
-	    @FXML
-	    private Label row32;
+    @FXML
+    private Label row32;
 
-	    @FXML
-	    private Label row33;
+    @FXML
+    private Label row33;
 
-	    @FXML
-	    private Label row34;
+    @FXML
+    private Label row34;
 
-	    @FXML
-	    private Label row35;
+    @FXML
+    private Label row35;
+
+    @FXML
+    private Text itnamecol;
+
+    @FXML
+    private Text startidcol;
+
+    @FXML
+    private Text ItemIdcol;
+
+    @FXML
+    private Text ItCategoercol;
+
+    @FXML
+    private Text itSelleridcol;;
 	
 	@FXML
 	public void  handleAddItems() {
@@ -90,7 +106,7 @@ public class Items_controll extends GetDataFromDB{
 		Connection c = co.getConnection();
 		try {
 			Statement st = c.createStatement();
-st.execute("insert into items values("+ItemId.getText()+","+Itemname.getText()+","+itSellerid.getText()+","+StartingBid.getText()+","+ItCategoer+")");
+st.execute("insert into items values("+itemidbid.getText()+","+Itemname.getText()+","+itSellerid.getText()+","+StartingBid.getText()+","+ItCategoer+")");
 		c.close();
 		} catch (SQLException e) {
 			e.printStackTrace();

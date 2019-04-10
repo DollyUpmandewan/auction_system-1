@@ -30,6 +30,13 @@ public class ActionController {
     {
     	   Main.showMainItems();
     }
+    
+    @FXML
+    private void gobidding() throws IOException 
+    {
+    	   Main.showBiddersScene();
+    }
+    
 }
 
 

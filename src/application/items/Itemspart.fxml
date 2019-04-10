@@ -49,23 +49,23 @@
 								<Insets left="5.0" />
 							</GridPane.margin>
 						</Label>
-						<TextField fx:id="Itemname" GridPane.columnIndex="1" />
-						<TextField fx:id="StartingBid" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-						<TextField fx:id="ItemId" promptText="Within 1000-1999" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-						<TextField fx:id="ItCategoer" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 						<Label text="Sellers Name:" GridPane.rowIndex="4">
 							<padding>
 								<Insets left="5.0" />
 							</padding>
 						</Label>
-						<TextField fx:id="itSellerid" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="Itemname" GridPane.columnIndex="1" />
+                  <TextField fx:id="StartingBid" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="ItCategoer" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="itemidbid" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="itSellerid" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 					</children>
 					<padding>
 						<Insets left="15.0" />
 					</padding>
 				</GridPane>
-				<Text fill="#ee4343" layoutX="23.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: TRUE;" text="Enter the data of the Items to be added" />
-				<Button fx:id="ItAddvalue" layoutX="116.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleAddItems" style="-fx-background-color: white;" text="Add Item" textFill="#ee4747" underline="true" />
+				<Button fx:id="ItAddvalue" layoutX="116.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Add Item" textFill="#ee4747" underline="true" />
+            <Label layoutX="43.0" layoutY="28.0" text="Enter the data of the Items to be added" />
 			</children>
 		</AnchorPane>
 	</left>
@@ -87,11 +87,11 @@
             <Label fx:id="row33" layoutX="221.0" layoutY="204.0" text="Label" />
             <Label fx:id="row34" layoutX="304.0" layoutY="204.0" text="Label" />
             <Label fx:id="row35" layoutX="380.0" layoutY="204.0" text="Label" />
-            <Text fx:id="Itemname" layoutX="22.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" />
-            <Text fx:id="StartingBid" layoutX="115.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Bid" />
-            <Text fx:id="ItemId" layoutX="215.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id " />
-            <Text fx:id="ItCategoer" layoutX="294.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
-            <Text fx:id="itSellerid" layoutX="370.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sellers Id" />
+            <Text fx:id="itnamecol" layoutX="22.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" />
+            <Text fx:id="startidcol" layoutX="115.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Bid" />
+            <Text fx:id="ItemIdcol" layoutX="215.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id " />
+            <Text fx:id="ItCategoercol" layoutX="294.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+            <Text fx:id="itSelleridcol" layoutX="370.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sellers Id" />
             <Separator layoutX="101.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="449.0" prefWidth="8.0" />
             <Separator layoutX="188.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="13.0" />
             <Separator layoutX="274.0" layoutY="2.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="0.0" />

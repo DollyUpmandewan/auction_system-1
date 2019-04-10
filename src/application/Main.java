@@ -21,7 +21,7 @@ public class Main extends Application {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
 		showMainView();
-		showWelcome();
+		//showWelcome();
 		showMainItems();
 		
 	   }
@@ -82,6 +82,7 @@ public static void showSellerScene() throws IOException {
 public static void showitemsScene() throws IOException {
 	// TODO Auto-generated method stub
 	FXMLLoader loader = new FXMLLoader();
+	System.out.println("entering itemspart");
 	loader.setLocation(Main.class.getResource("items/Itemspart.fxml"));
 	BorderPane itemspart = loader.load();
 	mainLayout.setCenter(itemspart);
@@ -89,6 +90,8 @@ public static void showitemsScene() throws IOException {
 }
 
     public static void main(String[] args) {
+    	//CommandLineDemo cld = new CommandLineDemo();
+    	//cld.start();
 		launch(args);
 	}
 	

@@ -11,16 +11,16 @@ public class CommandLineDemo {
 		Scanner sc = new Scanner(System.in);
 		int choice = sc.nextInt();
 		if(choice == 1) {
-			sc.close();
+			
 			login();
 		}
 		if(choice == 2) {
-			sc.close();
+			
 			signup();
 		}
 		else {
 			print("Invalid Input");
-			sc.close();
+			
 			start();
 		}
 	}
