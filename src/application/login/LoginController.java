@@ -11,7 +11,8 @@ import javafx.scene.control.TextField;
 //TODO add the Fields here just as the ones in the ones in the sign up page.
 //TODO Handle events using the event handlers here. 
 public class LoginController {
-	@FXML
+
+    @FXML
     private TextField loginId;
 
     @FXML
@@ -23,8 +24,6 @@ public class LoginController {
     @FXML
     private Hyperlink Signupbtn;
 
-   
-
 	@FXML
 	   private void gotoSignup() throws IOException 
 	   {
@@ -33,6 +32,11 @@ public class LoginController {
 	 @FXML
 	   private void goHome() throws IOException 
 	   {
+		 //TODO : Bro here we need to add the code to retrive the data from database and check it with the loginid and loginpass 
+		 //to check if they match 
+		 //If its true call the Main.showMainItems function as below and if not then ak to sign up 
+		 //IE: Call the signUp page function
+		 
 		   Main.showMainItems();
 	   }
 	
