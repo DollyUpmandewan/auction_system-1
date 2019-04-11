@@ -71,15 +71,15 @@ public class SignupController {
 		   Main.showLoginPage();
 //String Fname, String Lname, String username, String password,
 //String password2, String address,String mobile, String DoB, int userType
-		   String Fname = FnameField.getText();
-		   String Lname = LnameField.getText();
-		   String username = userfield.getText();
-		   String password = passonefield.getText();
-		   String password2 = passtwofield.getText();
-		   String address = Addressfield.getText();
-		   String mobile = PhoneField.getText();
+		 //  String Fname = FnameField.getText();
+		  // String Lname = LnameField.getText();
+		   //String username = userfield.getText();
+		   //String password = passonefield.getText();
+		   //String password2 = passtwofield.getText();
+		   //String address = Addressfield.getText();
+		   //String mobile = PhoneField.getText();
 		  // Double DoB = DateOfBirth.getText();
-		   SignUp ca = new SignUp();
+		   //SignUp ca = new SignUp();
 		   
 		   
 	   }

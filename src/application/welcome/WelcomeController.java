@@ -9,7 +9,7 @@ public class WelcomeController {
 	@FXML
 	   public void showLoginPage() throws IOException 
 	   {
-		   Main.showMainItems();
+		   Main.showLoginPage();
 	   }
 
 }

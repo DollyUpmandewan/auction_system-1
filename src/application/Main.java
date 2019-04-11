@@ -20,8 +20,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws IOException {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
-		showMainView();
-		//showWelcome();
+		
+		showWelcome();
 		showMainItems();
 		
 	   }
