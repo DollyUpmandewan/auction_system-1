@@ -50,6 +50,7 @@ public class GetDataFromDB{
 		}
 		public void getItemByName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i =0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from items where item_name ="+name);
@@ -99,8 +100,9 @@ public class GetDataFromDB{
 				e.printStackTrace();
 			}
 		}
-		public void getItemByCategory(int cat) {
+		public void getItemByCategory(String cat) {
 			try {
+				cat = "\""+cat+"\"";
 				int i =0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from items where category ="+cat);
@@ -147,6 +149,7 @@ public class GetDataFromDB{
 		}
 		public void getResearchByOwner(String owner) {
 			try {
+				owner = "\""+owner+"\"";
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where original_owner="+owner);
 				int i =0;
@@ -184,6 +187,7 @@ public class GetDataFromDB{
 		}
 		public void getResearchByLoc(String loc) {
 			try {
+				loc = "\""+loc+"\"";
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from research where find_loc="+loc);
 				int i =0;
@@ -268,6 +272,7 @@ public class GetDataFromDB{
 		}
 		public void getSellerByEmail(String email_id) {
 			try {
+				email_id = "\""+email_id+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from seller where email = "+email_id);
@@ -286,6 +291,7 @@ public class GetDataFromDB{
 		}
 		public void getSellerByContact(String contact) {
 			try {
+				contact = "\""+contact+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from seller where contact_no = "+contact);
@@ -304,6 +310,7 @@ public class GetDataFromDB{
 		}
 		public void getSellerByFName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from seller where fname = "+name);
@@ -322,6 +329,7 @@ public class GetDataFromDB{
 		}
 		public void getSellerByLName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from seller where lname = "+name);
@@ -391,6 +399,7 @@ public class GetDataFromDB{
 		}
 		public void getBidderByEmail(String email_id) {
 			try {
+				email_id = "\""+email_id+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from bidder where email = "+email_id);
@@ -410,6 +419,7 @@ public class GetDataFromDB{
 		}
 		public void getBidderByContact(String contact) {
 			try {
+				contact = "\""+contact+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from bidder where contact_no = "+contact);
@@ -429,6 +439,7 @@ public class GetDataFromDB{
 		}
 		public void getSellerByFName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from bidder where fname = "+name);
@@ -448,6 +459,7 @@ public class GetDataFromDB{
 		}
 		public void getBidderByLName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from bidder where lname = "+name);
@@ -508,6 +520,7 @@ public class GetDataFromDB{
 		}
 		public void getAdminsByFName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from _admin where fname = "+name);
@@ -524,6 +537,7 @@ public class GetDataFromDB{
 		}
 		public void getAdminsByLName(String name) {
 			try {
+				name = "\""+name+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from _admin where lname = "+name);
@@ -540,6 +554,7 @@ public class GetDataFromDB{
 		}
 		public void getAdminsByEmail(String email) {
 			try {
+				email = "\""+email+"\"";
 				int i = 0;
 				Statement st = c.createStatement();
 				ResultSet rs = st.executeQuery("select * from _admin where email = "+email);
