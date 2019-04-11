@@ -20,8 +20,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws IOException {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
-		
-		showWelcome();
+		showMainView();
 		showMainItems();
 		
 	   }
@@ -92,6 +91,7 @@ public static void showitemsScene() throws IOException {
     public static void main(String[] args) {
     	//CommandLineDemo cld = new CommandLineDemo();
     	//cld.start();
+    	System.out.println("hello");
 		launch(args);
 	}
 	

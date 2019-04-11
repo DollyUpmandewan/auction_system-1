@@ -48,6 +48,9 @@ public class SignupController {
 
 	    @FXML
 	    private TextField agefield;
+	    
+	    @FXML
+	    public TextField typerId;
 	
 	@FXML
 	   private void goHome() throws IOException 
@@ -69,17 +72,19 @@ public class SignupController {
 	   {
 		
 		   Main.showLoginPage();
-//String Fname, String Lname, String username, String password,
-//String password2, String address,String mobile, String DoB, int userType
-		 //  String Fname = FnameField.getText();
-		  // String Lname = LnameField.getText();
-		   //String username = userfield.getText();
-		   //String password = passonefield.getText();
-		   //String password2 = passtwofield.getText();
-		   //String address = Addressfield.getText();
-		   //String mobile = PhoneField.getText();
-		  // Double DoB = DateOfBirth.getText();
-		   //SignUp ca = new SignUp();
+	   }
+	public void chrcksignup() {
+		  String Fname = FnameField.getText();
+		   String Lname = LnameField.getText();
+		   String username = userfield.getText();
+		   String password = passonefield.getText();
+		   String password2 = passtwofield.getText();
+		   String address = Addressfield.getText();
+		   String mobile = PhoneField.getText();
+		   String DoB = DateOfBirth.getPromptText();
+		   //int userType = typerId.getText(); 
+		  // SignUp ca = new SignUp();
+		 // ca.CreateAccount(Fname,Lname,username,password,password2,address,mobile,DoB, userType);
 		   
 		   
 	   }
