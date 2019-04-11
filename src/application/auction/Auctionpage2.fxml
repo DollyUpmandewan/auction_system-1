@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
-
+<BorderPane minHeight="517.0" prefHeight="517.0" prefWidth="722.0" style="-fx-background-image: ping.jpg;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.auction.ActionController">
+   <top>
+      <Button mnemonicParsing="false" onAction="#goHome" prefHeight="31.0" prefWidth="55.0" style="-fx-background-color: white;" text="Home" textFill="#ee4444" underline="true" BorderPane.alignment="TOP_LEFT" />
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="CAncelBidId" layoutX="473.0" layoutY="2.0" mnemonicParsing="false" onAction="#gobidding" style="-fx-background-color: white;" text="Cancel " textFill="#c93e3e" underline="true" />
+            <Button fx:id="LoadBidId" layoutX="167.0" layoutY="2.0" mnemonicParsing="false" onAction="#addvalue" style="-fx-background-color: white;" text="Load Value" textFill="#d73f3f" underline="true" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="429.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="88.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: white;" text="BID AMMOUNT" textFill="#dd3333" underline="true" />
+            <Label layoutX="241.0" layoutY="5.0" text="THE AUCTION ARENA-GET UR FORTUNE" />
+            <TextField fx:id="ammountid" layoutX="204.0" layoutY="327.0" prefHeight="26.0" prefWidth="119.0" />
+            <Label layoutX="437.0" layoutY="66.0" text="Highest Bid Amount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="columnItemname" layoutX="151.0" layoutY="164.0" text="Artifect" />
+            <Label fx:id="columnhbid" layoutX="504.0" layoutY="164.0" text="Label" />
+            <Label layoutX="152.0" layoutY="66.0" text="Item">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>

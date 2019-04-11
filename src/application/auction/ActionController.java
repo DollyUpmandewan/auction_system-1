@@ -44,7 +44,7 @@ public class ActionController {
     }
     
     @FXML
-    private void addvalue() {
+    private void addvalue1() {
     	
     	
     	//String Fname = FnameField.getText();
@@ -55,12 +55,49 @@ public class ActionController {
     }
     
     @FXML 
-    private void refresh() {
+    private void refresh1() {
     	//TODO : JUST THE CURRENT HIGHEST BID AMMOUNT OF THE SAME ITEM.
     	//setText
     	
     	
     }
+    @FXML
+    private void addvalue2() {
+    	
+    	
+    	//String Fname = FnameField.getText();
+    	//int BidAmmount = ((Labeled) BidAmmountId).getText();
+    	//TODO : ADD A METHOD THAT WILL PUSH THE BID VALUE TO THE BACKEND DATABSE AND WILL SHOW THE HIGHEST BID IN THE LABEL 
+    	//set text the columnItemname and columnhbid from databse.
+    	
+    }
+    
+    @FXML 
+    private void refresh2() {
+    	//TODO : JUST THE CURRENT HIGHEST BID AMMOUNT OF THE SAME ITEM.
+    	//setText
+    	
+    	
+    }
+    @FXML  
+   private void addvalue3() {
+    	
+    	
+    	//String Fname = FnameField.getText();
+    	//int BidAmmount = ((Labeled) BidAmmountId).getText();
+    	//TODO : ADD A METHOD THAT WILL PUSH THE BID VALUE TO THE BACKEND DATABSE AND WILL SHOW THE HIGHEST BID IN THE LABEL 
+    	//set text the columnItemname and columnhbid from databse.
+    	
+    }
+  
+  @FXML 
+  private void refresh3() {
+  	//TODO : JUST THE CURRENT HIGHEST BID AMMOUNT OF THE SAME ITEM.
+  	//setText
+  	
+  	
+  }
+ 
 }
 
 

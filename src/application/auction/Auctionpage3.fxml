@@ -16,7 +16,7 @@
       <AnchorPane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="CAncelBidId" layoutX="473.0" layoutY="2.0" mnemonicParsing="false" onAction="#gobidding" style="-fx-background-color: white;" text="Cancel " textFill="#c93e3e" underline="true" />
-            <Button fx:id="LoadBidId" layoutX="167.0" layoutY="2.0" mnemonicParsing="false" onAction="#addvalue" style="-fx-background-color: white;" text="Load Value" textFill="#d73f3f" underline="true" />
+            <Button fx:id="LoadBidId" layoutX="167.0" layoutY="2.0" mnemonicParsing="false" onAction="#addvalue3" style="-fx-background-color: white;" text="Load Value" textFill="#d73f3f" underline="true" />
          </children>
       </AnchorPane>
    </bottom>
