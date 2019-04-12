@@ -55,6 +55,8 @@ public class Bidding_controls  {
 	    
 	    @FXML
 	    void goAuction1() throws IOException {
+	    	ActionController.itemName = bid11.getText();
+	    	ActionController.bid = bid12.getText();
 	    	Main.showAuction1();
 	    }
 	    

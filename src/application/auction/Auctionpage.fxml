@@ -38,8 +38,8 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh1" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
             <Button layoutX="336.0" layoutY="386.0" mnemonicParsing="false" onAction="#gopay" text="proceed to pay" />
+            <Button fx:id="refreshid" layoutX="511.0" layoutY="315.0" mnemonicParsing="false" onAction="#refresh1" text="Refresh" />
          </children>
          <BorderPane.margin>
             <Insets top="10.0" />

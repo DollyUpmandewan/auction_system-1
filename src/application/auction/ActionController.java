@@ -32,10 +32,10 @@ public class ActionController{
     private Label columnhbid;
     
     @FXML
-    private Label refreshid;
+    private Button refreshid;
     
-    public String itemName;
-    public String bid;
+    public static String itemName;
+    public static String bid;
     
     @FXML
     private void goHome() throws IOException 
@@ -67,8 +67,8 @@ public class ActionController{
     
     @FXML 
     private void refresh1() {
-    	//columnhbid.setText(bid);
-    	//columnItemname.setText(itemName);
+    	columnhbid.setText(bid);
+    	columnItemname.setText(itemName);
     	
     	
     }
