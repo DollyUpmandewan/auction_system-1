@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.payment.PaymentController">
+   <children>
+      <Label layoutX="-12.0" layoutY="117.0" prefHeight="100.0" prefWidth="542.0" text="Congragulation your orde is placed!!!" textFill="#55dddb" underline="true">
+         <padding>
+            <Insets left="150.0" />
+         </padding>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home" textFill="#fc3232" underline="true" />
+   </children>
+</AnchorPane>

@@ -16,7 +16,7 @@
       <AnchorPane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="CAncelBidId" layoutX="473.0" layoutY="2.0" mnemonicParsing="false" onAction="#gobidding" style="-fx-background-color: white;" text="Cancel " textFill="#c93e3e" underline="true" />
-            <Button fx:id="LoadBidId" layoutX="167.0" layoutY="2.0" mnemonicParsing="false" onAction="#addvalue" style="-fx-background-color: white;" text="Load Value" textFill="#d73f3f" underline="true" />
+            <Button fx:id="LoadBidId" layoutX="167.0" layoutY="2.0" mnemonicParsing="false" onAction="#addvalue2" style="-fx-background-color: white;" text="Load Value" textFill="#d73f3f" underline="true" />
          </children>
       </AnchorPane>
    </bottom>
@@ -38,7 +38,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
+            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh2" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
          </children>
          <BorderPane.margin>
             <Insets top="10.0" />

@@ -22,83 +22,83 @@ import javafx.scene.text.Text;
 public class Items_controll extends GetDataFromDB{
 	int i=0,j=1,k=2;
 		
-    @FXML
-    private TextField Itemname;
+	 @FXML
+	    private TextField Itemname;
 
-    @FXML
-    private TextField StartingBid;
+	    @FXML
+	    private TextField StartingBid;
 
-    @FXML
-    private TextField ItCategoer;
+	    @FXML
+	    private TextField ItCategoer;
 
-    @FXML
-    private TextField itemidbid;
+	    @FXML
+	    private TextField itemidbid;
 
-    @FXML
-    private TextField itSellerid;
+	    @FXML
+	    private TextField itSellerid;
 
-    @FXML
-    private Button ItAddvalue;
+	    @FXML
+	    private Button ItAddvalue;
 
-    @FXML
-    private Label row11;
+	    @FXML
+	    private Label row11;
 
-    @FXML
-    private Label row12;
+	    @FXML
+	    private Label row12;
 
-    @FXML
-    private Label row13;
+	    @FXML
+	    private Label row13;
 
-    @FXML
-    private Label row14;
+	    @FXML
+	    private Label row14;
 
-    @FXML
-    private Label row15;
+	    @FXML
+	    private Label row15;
 
-    @FXML
-    private Label row21;
+	    @FXML
+	    private Label row21;
 
-    @FXML
-    private Label row22;
+	    @FXML
+	    private Label row22;
 
-    @FXML
-    private Label row23;
+	    @FXML
+	    private Label row23;
 
-    @FXML
-    private Label row24;
+	    @FXML
+	    private Label row24;
 
-    @FXML
-    private Label row25;
+	    @FXML
+	    private Label row25;
 
-    @FXML
-    private Label row31;
+	    @FXML
+	    private Label row31;
 
-    @FXML
-    private Label row32;
+	    @FXML
+	    private Label row32;
 
-    @FXML
-    private Label row33;
+	    @FXML
+	    private Label row33;
 
-    @FXML
-    private Label row34;
+	    @FXML
+	    private Label row34;
 
-    @FXML
-    private Label row35;
+	    @FXML
+	    private Label row35;
 
-    @FXML
-    private Text itnamecol;
+	    @FXML
+	    private Text itnamecol;
 
-    @FXML
-    private Text startidcol;
+	    @FXML
+	    private Text startidcol;
 
-    @FXML
-    private Text ItemIdcol;
+	    @FXML
+	    private Text ItemIdcol;
 
-    @FXML
-    private Text ItCategoercol;
+	    @FXML
+	    private Text ItCategoercol;
 
-    @FXML
-    private Text itSelleridcol;;
+	    @FXML
+	    private Text itSelleridcol;
 	
 	@FXML
 	public void  handleAddItems() {

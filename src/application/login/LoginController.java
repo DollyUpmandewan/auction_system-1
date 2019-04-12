@@ -36,7 +36,8 @@ public class LoginController {
 		 	LoginAuction la = new LoginAuction();
 		 	if(la.LoginCheck(logID,logPass))
 		 		Main.showMainItems();
-		   
+	//TODO : if its not correct i think u need to add a prompt to sign up
+		 	
 	   }
 	
 	 

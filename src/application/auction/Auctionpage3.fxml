@@ -38,7 +38,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
+            <Label fx:id="refreshid" layoutX="504.0" layoutY="332.0" onDragDetected="#refresh3" style="-fx-background-color: white; -fx-background-radius: 15;" text="REFRESH" textFill="#f82727" underline="true" />
          </children>
          <BorderPane.margin>
             <Insets top="10.0" />

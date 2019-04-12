@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login.LoginController">
    <children>
-      <ImageView fitHeight="600.0" fitWidth="800.0">
+      <ImageView disable="true" fitHeight="600.0" fitWidth="800.0">
          <image>
             <Image url="@egyptian-1822036_960_720.jpg" />
          </image>
@@ -28,8 +28,6 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
-      <TextField fx:id="loginId" layoutX="510.0" layoutY="351.0" promptText="Enter email/username" />
-      <TextField fx:id="loginpass" layoutX="510.0" layoutY="399.0" promptText="Password" />
       <Button fx:id="loginsubmit" layoutX="457.0" layoutY="447.0" mnemonicParsing="false" onAction="#goHome" text="Button" />
       <Hyperlink fx:id="Signupbtn" layoutX="629.0" layoutY="448.0" onAction="#gotoSignup" text="Signup" />
       <ImageView fitHeight="101.0" fitWidth="124.0" layoutX="504.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" translateX="25.0">
@@ -37,5 +35,7 @@
             <Image url="@auc%20login.jpg" />
          </image>
       </ImageView>
+      <TextField fx:id="loginId" layoutX="505.0" layoutY="339.0" prefHeight="25.0" prefWidth="157.0" promptText="enter your user id" />
+      <TextField fx:id="loginpass" layoutX="505.0" layoutY="391.0" prefHeight="25.0" prefWidth="157.0" promptText="password" />
    </children>
 </AnchorPane>

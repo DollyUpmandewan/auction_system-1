@@ -73,6 +73,11 @@ public class SignupController {
 		
 		   Main.showLoginPage();
 	   }
+	@FXML
+	public void gowelcome() throws IOException {
+		Main.showWelcome();
+		
+	}
 	public void chrcksignup() {
 		  String Fname = FnameField.getText();
 		   String Lname = LnameField.getText();

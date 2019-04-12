@@ -24,7 +24,8 @@ public class Main extends Application {
 		showMainItems();
 		
 	   }
-   private void showWelcome() throws IOException {
+	
+   public static void showWelcome() throws IOException {
 		// TODO Auto-generated method stub
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("welcome/Welcomepart.fxml"));
@@ -52,7 +53,7 @@ public static void showMainItems() throws IOException {
 	
 }
 
-public static void showAuction() throws IOException {
+public static void showAuction1() throws IOException {
 	FXMLLoader loader = new FXMLLoader();
 	loader.setLocation(Main.class.getResource("auction/Auctionpage.fxml"));
 	BorderPane auctionpage = loader.load();
@@ -131,6 +132,27 @@ public static void showitemsScene() throws IOException {
 		AddDialogStage.showAndWait(); 
 		
 	}
+	public static void showAuction2() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("auction/Auctionpage2.fxml"));
+		BorderPane auctionpage = loader.load();
+		mainLayout.setCenter(auctionpage);
+	}
 	
+	public static void showAuction3() throws IOException {
+		// TODO Auto-generated method stub
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getResource("auction/Auctionpage3.fxml"));
+		BorderPane auctionpage = loader.load();
+		mainLayout.setCenter(auctionpage);
+	}
+	public static void Showfinal() throws IOException {
+		// TODO Auto-generated method stub
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(Main.class.getResource("payment/Finalpage.fxml"));
+				BorderPane auctionpage = loader.load();
+				mainLayout.setCenter(auctionpage);
+	}
 	
 }

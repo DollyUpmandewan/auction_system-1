@@ -49,11 +49,21 @@ public class Bidding_controls  {
 	    }
 	    
 	    @FXML
-	    void goAuction() throws IOException {
+	    void goAuction1() throws IOException {
 
-	    	Main.showAuction();
+	    	Main.showAuction1();
 	    }
 	    
+	    @FXML
+	    void goAuction2() throws IOException {
+
+	    	Main.showAuction2();
+	    }
+	    @FXML
+	    void goAuction3() throws IOException {
+
+	    	Main.showAuction3();
+	    }
 		  
 	
 	}

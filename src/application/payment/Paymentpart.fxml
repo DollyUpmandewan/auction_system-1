@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
@@ -13,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.payment.PaymentController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0CC0B8;" BorderPane.alignment="CENTER">
          <children>
@@ -36,11 +34,7 @@
                   <TextField fx:id="postaladdid" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <TextField fx:id="cnopayid" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Payment Method:" GridPane.rowIndex="3" />
-                  <ComboBox fx:id="paymodeid" prefWidth="150.0" promptText="Select a method" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <cursor>
-                        <Cursor fx:constant="V_RESIZE" />
-                     </cursor>
-                  </ComboBox>
+                  <TextField fx:id="paymodeid" style="-fx-background-color: yellow;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <Label layoutX="167.0" layoutY="145.0" style="-fx-background-color: yellow;" text="PAYMENT " textFill="#dd2626" textOverrun="WORD_ELLIPSIS" underline="true">
@@ -51,8 +45,9 @@
                   <Glow level="0.0" />
                </effect>
             </Label>
-            <Button fx:id="paysubmitId" layoutX="66.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: WHITE;" text="SUBMIT" textFill="#cd2d2d" underline="true" />
-            <Button fx:id="payhomeid" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: white;" text="HOME" textFill="#fc3a3a" underline="true" />
+            <Button fx:id="paysubmitId" layoutX="66.0" layoutY="491.0" mnemonicParsing="false" onAction="#gofinal" style="-fx-background-color: WHITE;" text="SUBMIT" textFill="#cd2d2d" underline="true" />
+            <Button fx:id="payhomeid" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="HOME" textFill="#fc3a3a" underline="true" />
+            <Button layoutX="275.0" layoutY="491.0" mnemonicParsing="false" onAction="#goback" style="-fx-background-color: white;" text="Cancel" textFill="#f21414" underline="true" />
          </children>
       </AnchorPane>
    </center>
