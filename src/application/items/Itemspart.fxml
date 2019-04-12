@@ -66,11 +66,7 @@
 				</GridPane>
 				<Button fx:id="ItAddvalue" layoutX="116.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleAddItems" style="-fx-background-color: white;" text="Add Item" textFill="#ee4747" underline="true" />
             <Label layoutX="43.0" layoutY="28.0" text="Enter the data of the Items to be added" />
-            <Label layoutY="6.0" onDragDetected="#goHome" text="Home">
-               <padding>
-                  <Insets left="5.0" />
-               </padding>
-            </Label>
+            <Button layoutX="6.0" layoutY="2.0" mnemonicParsing="false" onAction="#goHome" text="home" textFill="#f20909" underline="true" />
 			</children>
 		</AnchorPane>
 	</left>

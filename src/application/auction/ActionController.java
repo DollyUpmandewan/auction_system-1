@@ -53,6 +53,11 @@ public class ActionController {
     	//set text the columnItemname and columnhbid from databse.
     	
     }
+    @FXML
+    void gopay() throws IOException {
+    	//TODO : Add the even handling here bro
+    		    	Main.Showfinal();
+    		    }
     
     @FXML 
     private void refresh1() {

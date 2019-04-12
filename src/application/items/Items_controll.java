@@ -106,11 +106,12 @@ public class Items_controll extends GetDataFromDB{
 		Connection c = co.getConnection();
 		try {
 			Statement st = c.createStatement();
-st.execute("insert into items values("+itemidbid.getText()+","+Itemname.getText()+","+itSellerid.getText()+","+StartingBid.getText()+","+ItCategoer+")");
+st.execute("insert into items values("+"\""+itemidbid.getText()+"\""+","+"\""+Itemname.getText()+"\""+","+"\""+itSellerid.getText()+"\""+","+"\""+StartingBid.getText()+"\""+","+"\""+ItCategoer+"\""+")");
 		c.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		try {
 			GetDataFromDB.GetItems gi = new GetDataFromDB.GetItems();
 			gi.getItems();
 			i+=2;
@@ -130,7 +131,7 @@ st.execute("insert into items values("+itemidbid.getText()+","+Itemname.getText(
 			row32.setText(""+gi.start_bid[k]);
 			row33.setText(""+gi.item_id[k]);
 			row34.setText(gi.category[k]);
-			row35.setText(""+gi.seller_id[k]);
+			row35.setText(""+gi.seller_id[k]);}catch(Exception e) {e.printStackTrace();}
 			
 		}
 	@FXML

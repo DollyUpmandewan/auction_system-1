@@ -21,8 +21,7 @@ public class Main extends Application {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
 		showMainView();
-		showWelcome();
-		
+		showMainItems();
 	   }
 	
    public static void showWelcome() throws IOException {
@@ -150,9 +149,10 @@ public static void showitemsScene() throws IOException {
 	public static void Showfinal() throws IOException {
 		// TODO Auto-generated method stub
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(Main.class.getResource("payment/Finalpage.fxml"));
+				loader.setLocation(Main.class.getResource("payment/Paymentpart.fxml"));
 				BorderPane auctionpage = loader.load();
 				mainLayout.setCenter(auctionpage);
 	}
+	
 	
 }

@@ -79,17 +79,17 @@ public class SignupController {
 		
 	}
 	public void checksignup() {
-		  String Fname = FnameField.getText();
-		   String Lname = LnameField.getText();
-		   String username = userfield.getText();
-		   String password = passonefield.getText();
-		   String password2 = passtwofield.getText();
-		   String address = Addressfield.getText();
-		   String mobile = PhoneField.getText();
-		   String DoB = DateOfBirth.getPromptText();
-		   //int userType = typerId.getText(); 
-		  // SignUp ca = new SignUp();
-		 // ca.CreateAccount(Fname,Lname,username,password,password2,address,mobile,DoB, userType);
+		  String Fname = "\""+FnameField.getText()+"\"";
+		   String Lname = "\""+LnameField.getText()+"\"";
+		   String username = "\""+userfield.getText()+"\"";
+		   String password = "\""+passonefield.getText()+"\"";
+		   String password2 = "\""+passtwofield.getText()+"\"";
+		   String address = "\""+Addressfield.getText()+"\"";
+		   String mobile = "\""+PhoneField.getText()+"\"";
+		   String DoB = "1999-02-12";
+		   //int userType = typerId.getText();
+		   SignUp ca = new SignUp();
+		 ca.CreateAccount(Fname,Lname,username,password,password2,address,mobile,DoB, 1);
 		   
 		   
 	   }

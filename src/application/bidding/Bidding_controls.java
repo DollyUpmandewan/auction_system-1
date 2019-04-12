@@ -44,7 +44,6 @@ public class Bidding_controls  {
 
 	    @FXML
 	    void goHome() throws IOException {
-//TODO : Add the even handling here bro
 	    	Main.showMainItems();
 	    }
 	    
