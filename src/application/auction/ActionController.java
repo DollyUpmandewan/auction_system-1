@@ -1,17 +1,20 @@
 package application.auction;
 
 import java.io.IOException;
+import java.net.URL;
 import java.time.temporal.TemporalField;
+import java.util.ResourceBundle;
 
 import application.Main;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Labeled;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 
-public class ActionController {
+public class ActionController{
 
 	@FXML
     private Button CAncelBidId;
@@ -30,6 +33,9 @@ public class ActionController {
     
     @FXML
     private Label refreshid;
+    
+    public String itemName;
+    public String bid;
     
     @FXML
     private void goHome() throws IOException 
@@ -61,8 +67,8 @@ public class ActionController {
     
     @FXML 
     private void refresh1() {
-    	//TODO : JUST THE CURRENT HIGHEST BID AMMOUNT OF THE SAME ITEM.
-    	//setText
+    	//columnhbid.setText(bid);
+    	//columnItemname.setText(itemName);
     	
     	
     }
@@ -102,6 +108,8 @@ public class ActionController {
   	
   	
   }
+
+
  
 }
 

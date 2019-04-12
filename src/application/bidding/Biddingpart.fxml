@@ -83,6 +83,7 @@
                                        </textFill></Button>
                                     <Separator layoutX="110.0" layoutY="38.0" orientation="VERTICAL" prefHeight="200.0" />
                                     <Separator layoutX="252.0" layoutY="38.0" orientation="VERTICAL" prefHeight="200.0" />
+                                    <Button fx:id="bidRefresh" layoutX="303.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" textAlignment="CENTER" />
                                  </children>
                               </AnchorPane>
                            </content></Tab>
