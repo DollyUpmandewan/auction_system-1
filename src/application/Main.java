@@ -21,7 +21,7 @@ public class Main extends Application {
 		Main.primaryStage= primaryStage;
 		Main.primaryStage.setTitle("Auction System App");
 		showMainView();
-		showMainItems();
+		showWelcome();
 		
 	   }
 	
