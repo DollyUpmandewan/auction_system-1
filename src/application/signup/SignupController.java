@@ -78,7 +78,7 @@ public class SignupController {
 		Main.showWelcome();
 		
 	}
-	public void chrcksignup() {
+	public void checksignup() {
 		  String Fname = FnameField.getText();
 		   String Lname = LnameField.getText();
 		   String username = userfield.getText();
