@@ -30,7 +30,19 @@ public class CommandLineDemo {
 		
 	}
 	void login() {
-		// TODO Auto-generated method stub
+		try {
+		LoginAuction la = new LoginAuction();
+		print("Enter ID");
+		Scanner sc = new Scanner(System.in);
+		String userID = sc.nextLine();
+		print("Enter Password");
+		String password = sc.nextLine();
 		
+		if(la.LoginCheck(userID, password))
+			print("LoginSuccessful");
+		else
+			print("Wrong credentials/Credentials not found");
+			login();
+		}catch(Exception e) {e.printStackTrace();}
 	}
 }
