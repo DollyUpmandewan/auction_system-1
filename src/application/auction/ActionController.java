@@ -2,9 +2,11 @@ package application.auction;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.*;
 import java.time.temporal.TemporalField;
 import java.util.ResourceBundle;
 
+import application.ConnectingMysql;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -51,18 +53,27 @@ public class ActionController{
     
     @FXML
     private void addvalue1() {
-    	
-    	
-    	//String Fname = FnameField.getText();
-    	//int BidAmmount = ((Labeled) BidAmmountId).getText();
-    	//TODO : ADD A METHOD THAT WILL PUSH THE BID VALUE TO THE BACKEND DATABSE AND WILL SHOW THE HIGHEST BID IN THE LABEL 
-    	//set text the columnItemname and columnhbid from databse.
-    	
+    	int amt = Integer.parseInt(ammountid.getText());
+    	if(amt > Integer.parseInt(columnhbid.getText())) {
+    		columnhbid.setText(""+amt);
+    		int prevamt = Integer.parseInt(columnhbid.getText());
+    		ConnectingMysql co = new ConnectingMysql();
+    		Connection c = co.getConnection();
+    		try {
+    			Statement st = c.createStatement();
+    			st.execute("UPDATE items SET start_bid ="+amt+"WHERE start_bid ="+prevamt);
+    			columnhbid.setText(""+amt);
+    		}catch(Exception e) {
+    			e.printStackTrace();
+    		}
+    	}
+    	else {
+    		System.out.println("The entered amount is lesser than current highest bid. Please enter a higher bid.");
+    	}
     }
     @FXML
     void gopay() throws IOException {
-    	//TODO : Add the even handling here bro
-    		    	Main.Showfinal();
+    	   	Main.Showfinal();
     		    }
     
     @FXML 
