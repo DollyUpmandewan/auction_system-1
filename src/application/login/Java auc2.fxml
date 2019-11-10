@@ -23,19 +23,19 @@
          </font>
       </Text>
       <TextArea layoutX="434.0" layoutY="167.0" prefHeight="393.0" prefWidth="285.0" />
-      <Text layoutX="531.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in" textAlignment="CENTER" wrappingWidth="91.73046875">
+      <Text layoutX="531.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log-in" textAlignment="CENTER" wrappingWidth="91.73046875">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
       <Button fx:id="loginsubmit" layoutX="457.0" layoutY="447.0" mnemonicParsing="false" onAction="#goHome" text="Button" />
-      <Hyperlink fx:id="Signupbtn" layoutX="629.0" layoutY="448.0" onAction="#gotoSignup" text="Signup" />
+      <Hyperlink fx:id="Signupbtn" layoutX="629.0" layoutY="448.0" onAction="#gotoSignup" text="Sign-up" />
       <ImageView fitHeight="101.0" fitWidth="124.0" layoutX="504.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" translateX="25.0">
          <image>
             <Image url="@auc%20login.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="loginId" layoutX="505.0" layoutY="339.0" prefHeight="25.0" prefWidth="157.0" promptText="enter your user id" />
+      <TextField fx:id="loginId" layoutX="505.0" layoutY="339.0" prefHeight="25.0" prefWidth="157.0" promptText="enter your user-id" />
       <TextField fx:id="loginpass" layoutX="505.0" layoutY="391.0" prefHeight="25.0" prefWidth="157.0" promptText="password" />
    </children>
 </AnchorPane>
